@@ -1,0 +1,169 @@
+.container {
+    width: 100%
+    margin: 0px;
+}
+.home {  
+    height:75px;  
+    background-color: #4CAF50;  
+}
+.home ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+.home ul li {
+    display: inline-block;
+    padding: 15px;
+    margin: 0px
+}
+.textmindx{
+    font-family: 'Comic sans MS';
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px 300px;
+}
+.text {
+    font-family: Verdana;
+    font-size: 24px;
+    margin: 0px 25px;
+
+}
+.hi {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family:'Times New Roman';
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+}
+.about {
+    background-color: black;
+    font-family: 'verdana';
+    color: white;
+    font-size: 18px;  
+
+}
+.me {
+    text-align: center;
+    font-size: 48px;
+    margin: 0px;
+    color: rgb(76, 175, 80);
+}
+.about div {
+    display: flex;
+    padding: 20px;
+    font-family: Verdana;
+}
+.img1 {
+    width: 25%;
+    padding: 50px;
+    margin: 0px 50px;
+
+}
+.nd {
+    font-size: 18px;
+    padding: 20px;
+}
+.duan {
+    background-color: gray;
+    margin: 0px;   
+}
+.duan p {
+    font-family: Verdana;
+    font-size: 48px;
+    text-align: center;
+    margin: 0px;
+}
+.duan div {
+    display: flex;
+    padding-left: 150px;
+}
+.ds {
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 50px;
+   
+}
+.ds li {
+    width:max-content;
+}
+.img2 {
+    width: 25%;
+    padding: 50px;
+}
+.achi {
+    height: 400px;
+    padding-left: 100px;
+    font-family: Verdana;
+    font-size: 18px;
+    background-color: black;
+    color: white; 
+}
+.achi p {
+    margin: 0px;
+    padding: 50px;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(76, 175, 80);
+
+}
+.achi ul {
+    margin: 0px;  
+    padding-left: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact { 
+    height: 400px; 
+    background-color: grey;
+    color: black;
+    font-family: Verdana;
+}
+.cont1 {
+    margin: 0px;
+    font-size: 48px;
+    text-align: center;
+}
+.contact div {
+    
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 40%;
+    margin: 40px auto;
+}
+.contact form {
+    font-size: 18px;
+}
+.khung {
+    padding-right: 20px;
+ 
+}
+
+.lienket {
+    background-color: #4CAF50; 
+    margin: 0px;
+}
+.lienket div {
+    padding: 20px;
+    display: inline-block;
+    padding-left: 100px;
+    list-style-type: none;
+    font-family:'Times New Roman';
+    font-size: 16px;
+}
+.ket {
+    background-color: black;
+    font-family: Verdana;
+    font-size: 24px;
+    padding: 20px;
+}
+.ket div {
+    display: inline-block;
+    padding-left: 100px;
+    color: green;
+}
+.top {
+    font-size: 32px;
+    text-align: right;
+}  
