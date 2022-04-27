@@ -1,0 +1,111 @@
+.store {
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.header {
+    background-color: blueviolet;
+    color: white;
+    height: 108px;
+}
+
+.title {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.title h1 {
+    width: 800px;
+    height: 46px;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 14px;
+    padding-top: 30px;
+}
+
+.nav,
+.box {
+    margin: auto;
+    width: 80%;
+
+}
+
+.nav p {
+    margin-bottom: 10px;
+}
+
+.box {
+    border: 2px solid #c9c9c9;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    height: 800px;
+}
+
+.boxn {
+
+    padding: 20px;
+}
+
+.boxn img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.boxn button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.nav p {
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.text1,
+.text2 {
+    color: rebeccapurple;
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+
+.text2 {
+    background-color: rgb(238, 209, 251);
+    font-style: italic;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+.text3 {
+    word-spacing: 0.5px;
+    color: rgb(117, 112, 112);
+}
+
+.text3 p {
+    margin-top: 0px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.footer {
+    height: 88px;
+    margin-top: 20px;
+    border-top: 2px solid blueviolet;
+}
+
+.mindx {
+    margin: auto;
+    width: 80%;
+    padding-top: 20px;
+}
