@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-top .header-top-icon {
+  font-size: 34px;
+  color: white;
+  position: fixed;
+  right: 0;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100px;
+  z-index: 100;
+  text-shadow: 0 0 12px black, 0 0 20px red;
+}
+
+.header-top .header-top-icon i {
+  -webkit-animation: rotation 8s infinite linear;
+          animation: rotation 8s infinite linear;
+}
+
+.header-top .header-top-icon i:hover {
+  color: #b3e5fc;
+}
+
+.header-top ul {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 80px;
+  display: none;
+}
+
+.header-top ul li {
+  margin: 20px;
+  background-color: #b3e5fc;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.header-top ul li:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.header-top ul li a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-top ul li a:hover {
+  color: #15ff00;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.header-top ul.active {
+  display: block;
+}
+
+.header-content {
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+}
+
+.header-content .content-form {
+  margin: 80px 0px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.header-content .content-form:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-content .content-form select {
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-content .content-form select:hover {
+  color: black;
+  background-color: white;
+}
+
+.header-content .content-form input {
+  width: 200px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.header-content .content-form input:focus {
+  background-color: white;
+  color: black;
+}
+
+.header-content button {
+  width: 150px;
+  height: 50px;
+  color: white;
+  margin: auto 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.header-content button:hover {
+  color: red;
+}
+
+.bgimg {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.picture {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  -webkit-box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.4), 0 16px 48px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.4), 0 16px 48px 0 rgba(0, 0, 0, 0.5);
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+.form-form {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+.form-form.active {
+  display: block;
+}
+
+.form-login {
+  width: 350px;
+  font-size: 24px;
+  margin: 10vh auto;
+  background-color: #aff8ab;
+  border-radius: 5%;
+  z-index: 10;
+  padding-bottom: 10px;
+  line-height: 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 11px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 11px 0px inset;
+}
+
+.form-login-infor {
+  position: relative;
+  padding: 20px;
+}
+
+.form-login-infor i {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.form-login-infor a {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.form-login-infor h3 {
+  margin: 0;
+}
+
+.form-login-infor input {
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.form-login-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form-login-btn button {
+  font-size: 22px;
+  height: 30px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.form-login-brands-facebook {
+  background-color: blue;
+  margin: 10px auto;
+  color: white;
+  width: 90%;
+}
+
+.form-login-brands-facebook a {
+  color: white;
+}
+
+.form-login-brands-google {
+  background-color: red;
+  margin: 10px auto;
+  color: white;
+  width: 90%;
+}
+
+.form-login-brands-google a {
+  color: white;
+}
+
+.box {
+  text-align: center;
+  font-size: 20px;
+}
+
+.box h1 {
+  font-size: 50px;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+}
+
+.tab-content h5 {
+  font-size: 30px;
+}
+
+.tab-content .content-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tab-content .content-box .box-n {
+  width: 25%;
+}
+
+.tab-content .content-box .box-n img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+          box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.tab-content .content-box .box-n img:hover {
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 20px 10px rgba(0, 140, 186, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.tab button {
+  background-color: inherit;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button:hover {
+  background-color: red;
+  color: white;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tab button:focus {
+  background-color: black;
+  color: white;
+  width: 160px;
+  height: 80px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: black;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 100px;
+}
+
+.contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+}
+
+.contact .contact-form .fa-solid fa-envelope {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact .contact-form input {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  font-size: 20px;
+}
+
+.contact .contact-form button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact .contact-icon {
+  font-size: 30px;
+}
+
+.contact .contact-icon p {
+  font-size: 20px;
+}
+
+footer {
+  background-color: black;
+  height: 60px;
+  font-size: 20px;
+}
+
+footer div {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div p {
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Style_DA.css.map */
