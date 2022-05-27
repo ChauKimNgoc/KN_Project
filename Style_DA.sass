@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+
+$bgcolor: #b3e5fc
+$fontsize: 20px
+$bgcolor-0: rgba(255,255,255,0)
+
+body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+ul
+    list-style: none
+    padding: 0
+
+a
+    text-decoration: none
+    color: black
+
+// -------------------- HEADER --------------------
+
+.header-top
+    .header-top-icon
+        font-size: 34px
+        color: white
+        position: fixed
+        right: 0
+        margin: 20px
+        display: flex
+        justify-content: space-around
+        width: 200px
+        z-index: 100
+        text-shadow: 0 0 12px black, 0 0 20px red
+        
+        i
+            animation: rotation 60s infinite linear
+            &:hover
+                color: $bgcolor
+
+
+  
+
+
+
+    ul
+        position: fixed
+        z-index: 100
+        right: 0
+        top: 80px
+        display: none
+        
+        li
+            margin: 20px
+            background-color: $bgcolor
+            padding: 10px
+            // transition: 2s
+            border-radius: 5%
+            &:hover
+                background-color: $bgcolor-0
+            
+                
+                
+            
+            a
+                // color: white
+                font-size: $fontsize
+                font-weight: bold
+                &:hover
+                    color: #15ff00
+                    
+                    
+                    // font-size: 28px
+                    
+@keyframes rotation 
+  from 
+    transform: rotate(0deg)
+  
+  to 
+    transform: rotate(359deg)            
+
+.header-top ul.active
+    display: block
+
+.header-content
+    width: 25vw
+    
+    position: fixed
+    // top: 30px
+    // left: 30px
+    height: 100vh
+    background-color: rgba(255,255,255,0.7)
+    // text-align: center
+    z-index: 1000
+    display: none
+
+    .content-form
+        // margin: 80px 0px
+        margin: 10px
+        padding: 20px
+        height: 
+        // display: flex
+        justify-content: space-around
+        // background-color: rgba(255,255,255,0.2)
+        // background-color: red
+        border-radius: 10px
+        &:hover
+            
+            background-color: #e3fdea
+
+        p
+        font-size: $fontsize
+        // color: white
+        font-weight: bold
+        // margin: 10px
+            &:hover
+                color: red
+
+        select
+            width: 200px
+            height: 30px
+            border: none
+            background-color: $bgcolor-0
+            // color: white
+            // font-weight: bold
+            font-size: $fontsize
+            
+            &:hover
+                // color: black
+                background-color: white
+            &:focus
+                // background-color: white
+
+        input
+            width: 200px
+            height: 30px
+            box-sizing: border-box
+            border: none
+            background-color: $bgcolor-0
+            // color: white
+            &:focus
+                background-color: white
+                // color: black
+
+
+    button
+        width: 150px
+        height: 50px
+        // color: white
+
+        margin: auto 0
+        font-size: $fontsize
+        // position: absolute
+        // bottom: 50px
+        cursor: pointer
+        border-radius: 5px
+        font-weight: bold
+        background-color: rgba(255,255,255,0)
+        border: none
+        &:hover
+            // background-color: transparent
+            // border: 2px solid red
+            color: white
+
+.header-content.active
+    display: block
+
+
+// -------------------- MENU IMG --------------------
+
+.bgimg
+    position: inherit
+    
+    width: 100%
+    height: 100%
+    object-fit: cover
+    
+    
+    
+.picture
+    width: 100%
+    position: absolute
+    bottom: -260px
+    display: flex
+    flex-wrap: wrap
+   
+    
+    img
+        object-fit: cover
+        width: 250px
+        height: 250px
+        margin: auto
+        border: 5px solid #ddd
+        border-radius: 4px
+        padding: 5px
+        box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.4), 0 16px 48px 0 rgba(0, 0, 0, 0.5)
+        animation-name: floating
+        animation-duration: 3s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-in-out
+        cursor: pointer
+        margin: 35px
+        // &:hover
+            
+        //     transform: scale(1.2)
+            
+
+    
+@keyframes floating 
+    0%{ transform: translate(0, 0px)} 
+    50%{ transform: translate(0, 20px)}  
+    100%{ transform: translate(0, 0px)} 
+    
+ 
+
+// -------------------- FORM LOGIN --------------------
+
+.form-form
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    z-index: 10
+    background-color: rgba(255,255,255,0.5)
+    display: none
+    
+    
+.form-form.active
+    display: block 
+
+.form-login
+    width: 350px
+    font-size: 24px
+    margin: 10vh auto
+    background-color: #aff8ab
+    border-radius: 5%
+    z-index: 10
+    padding-bottom: 10px
+    line-height: 30px
+    height:
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 11px 0px inset
+   
+
+.form-login-infor
+    position: relative
+    padding: 20px
+    i
+        position: absolute
+        right: 20px
+        cursor: pointer
+    a
+        font-size: 14px
+        font-style: italic
+
+    h3
+        margin: 0
+        // text-align: center
+    input
+        width: 90%
+        height: 30px
+        font-size: $fontsize
+        margin-top: 20px    
+
+.form-login-btn
+    display: flex
+    justify-content: space-around
+    
+    button
+        font-size: 22px
+        height: 30px
+        width: 150px
+        background-color: $bgcolor-0
+        border: none
+        cursor: pointer
+        
+        
+        
+        
+
+// .form-login-brands
+//     color: white
+    
+
+.form-login-brands-facebook
+    background-color: blue
+    margin: 10px auto
+    color: white
+    width: 90%
+    a
+        color: white
+
+.form-login-brands-google
+    background-color: red
+    margin: 10px auto
+    color: white
+    width: 90%
+    a
+        color: white
+
+
+// -------------------- CHỈA SẺ TRẢI NGHIỆM --------------------
+
+// .box-box
+// .tab-content
+    // width: 100%
+// .content-box
+//     width: 100%
+//     display: flex
+//     justify-content: space-around
+//     .box-n
+//         width: 30%
+//         img
+//             width: 100%
+//             height: 80%
+
+.box
+    text-align: center
+    font-size: $fontsize
+    h1 
+        font-size: 50px
+        
+    
+
+.tab-content
+    width: 100%
+    display: none
+    // border: 1px solid #ccc
+    // border-top: none
+    h5
+        font-size: 30px
+    
+    p
+        margin: 60px
+        
+        
+        
+    
+    .content-box
+        width: 100%
+        display: flex
+        justify-content: space-around
+        .box-n
+            width: 25%
+            
+                
+            img
+                width: 100%
+                height: 100%
+                border: 5px solid black
+                
+                object-fit: cover
+                box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px
+                
+                &:hover
+                    box-shadow: 0 0 20px 10px rgba(0, 140, 186, 0.5)
+                    transform: scale(1.1)
+                    
+                    
+
+                   
+.tab 
+    // overflow: hidden 
+    // border: 2px solid #ccc
+    // background-color: #f1f1f1
+
+ 
+
+    button 
+        background-color: inherit
+        // float: left
+        // border: none
+        // outline: none
+        cursor: pointer
+        padding: 14px 16px
+        transition: 0.3s
+        font-size: $fontsize
+        // font-weight: bold
+        margin: 10px
+        border-radius: 10%
+        font-weight: bold
+        &:hover 
+            background-color: #ddd
+        // .active 
+        //     // background-color: #ccc
+        //     background-color: red
+ 
+.tab
+    button
+        &:hover
+            background-color: red
+            color: white
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+
+        &:focus
+            // font-weight: bold
+            background-color: black
+            color: white
+            // color: #333
+            width: 160px
+            height: 80px
+//     .active
+        
+//         background-color: red
+  
+
+ 
+
+
+        
+
+ 
+
+// .tab-content 
+//    
+//     box-sizing: border-box
+//     // padding: 6px 12px
+//     
+//     // width: 100%
+    
+
+// .content-box
+//     // width: 100%
+//     display: flex
+//     // justify-content: space-around
+//     .box-n
+//         width: 50px
+
+// -------------------- SLIDER--------------------
+.VN-box
+    margin-top: 100px
+.item
+    img
+        height: 250px
+// -------------------- CONTACT--------------------
+.contact
+    display: flex
+    justify-content: space-around
+    background-color: black
+    padding: 20px
+    font-size: $fontsize
+    font-weight: bold
+    color: white
+    margin-top: 40px
+
+
+    .contact-form
+        display: flex
+        font-size: 30px
+        .fa-solid fa-envelope
+            flex: 1
+        input
+            flex: 3
+            font-size: $fontsize
+
+            
+        button
+            flex: 1
+            color: white
+            background-color: $bgcolor-0
+            font-size: $fontsize
+            font-weight: bold
+
+    .contact-icon
+        font-size: 30px
+        p
+            font-size: $fontsize
+
+// -------------------- FOOTER --------------------
+footer
+    background-color: black
+    height: 60px
+    font-size: $fontsize
+    div
+        height: 60px
+        display: flex
+        p
+            margin: auto
+            width: max-content
+            color: white
+            font-weight: bold
+
+
+        
+    
