@@ -1,0 +1,126 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 1600px;
+  height: 1200px;
+  background: #E6EAF8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+header {
+  margin: 100px;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-list li {
+  border-radius: 20%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 50px;
+}
+
+.menu-list li:hover {
+  background-color: #849FFF;
+  color: white;
+}
+
+.infor {
+  width: 1213px;
+  height: 854px;
+  background-color: white;
+  border: 5px solid purple;
+  position: absolute;
+  left: 193px;
+  top: 173px;
+}
+
+.box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box-container .box {
+  margin-top: 20px;
+  width: 327px;
+  height: 208px;
+  background: #FBFCFF;
+  border-radius: 16px;
+  border: 1px solid #BFC8E6;
+  -webkit-box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+          box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.box-container .box .avatar {
+  padding-right: 20px;
+}
+
+.box-container .box .avatar img {
+  width: 97px;
+  height: 97px;
+  margin-left: 24px;
+  margin-top: 24px;
+  border-radius: 50%;
+}
+
+.box-container .box .content {
+  width: 327px;
+  height: 208px;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+.box-container .box .content h3 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #516FD4;
+  border-radius: 20%;
+}
+
+section {
+  margin: 100px;
+}
+/*# sourceMappingURL=Style_TEST.css.map */
